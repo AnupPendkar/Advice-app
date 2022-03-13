@@ -1,0 +1,60 @@
+:root {
+  --lighy-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --greyish-blue: hsl(217, 19%, 38%);
+  --dark-greyish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+  font-size: 10px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-blue);
+  color: white;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: var(--dark-greyish-blue);
+  padding: 2rem 4rem;
+  width: 40%;
+}
+.advice {
+  color: var(--neon-green);
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  background-blend-mode: multiply;
+}
+.quote {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.divider {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.dice-container {
+  background: var(--neon-green);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
